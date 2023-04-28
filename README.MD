@@ -1,5 +1,6 @@
 # Catsville
 Go to the app to look at the kitties
+> <img align='right' src="https://media.giphy.com/media/10LeDakqoglbVK/giphy.gif" width="230" />
 
 ## Built with:
 * [Jetpack Compose](https://developer.android.com/jetpack?hl=en)
