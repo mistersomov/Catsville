@@ -74,4 +74,11 @@ object Dependencies {
 
         const val coil = "io.coil-kt:coil-compose:$coilVersion"
     }
+    object Paging {
+        private const val pagingVersion = "3.1.1"
+        private const val pagingComposeVersion = "1.0.0-alpha18"
+
+        const val paging = "androidx.paging:paging-runtime:$pagingVersion"
+        const val pagingCompose = "androidx.paging:paging-compose:$pagingComposeVersion"
+    }
 }

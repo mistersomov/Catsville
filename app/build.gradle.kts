@@ -29,19 +29,16 @@ android {
             useSupportLibrary = true
         }
         resValue("string", "app_name", "Catsville")
+
+        buildConfigField("String", "baseUrl", "\"${Config.baseUrl}\"")
+        buildConfigField("String", "apiKey", "\"${Config.apiKey}\"")
     }
 
     buildTypes {
-        debug {
+        release {
             isDebuggable = true
             isMinifyEnabled = false
             isShrinkResources = false
-
-        }
-        release {
-            isDebuggable = false
-            isMinifyEnabled = true
-            isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
@@ -128,4 +125,9 @@ dependencies {
      * Coil
      */
     implementation(Dependencies.Coil.coil)
+    /**
+     * Paging
+     */
+    implementation(Dependencies.Paging.paging)
+    implementation(Dependencies.Paging.pagingCompose)
 }

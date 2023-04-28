@@ -6,7 +6,6 @@ object Config {
     const val versionName = "1.1.2"
     const val packageName = "com.mistersomov.catsville"
 
-    const val cryptoBaseUrl = "https://api.coincap.io"
-    const val apiKey = "Bearer 27ade597-b24e-476f-a8e6-501e8be4d88c"
-    const val cryptoBaseImageUrl = "https://assets.coincap.io"
+    const val baseUrl = "https://api.thecatapi.com"
+    const val apiKey = "live_fvOyNyAWKgt3amM8AJDlX62OftjZOPwTrOVRWDwhSrl36K42H3lhi0416LlKzHnI"
 }
