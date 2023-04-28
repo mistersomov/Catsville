@@ -1,4 +1,7 @@
 <resources>
+    <string name="fetching">Fetching…</string>
+    <string name="please_wait">Please wait…</string>
     <!--error-->
+    <string name="loading_error">Abrupt server error</string>
     <string name="implementation_state_error" translatable="false">Unexpected state</string>
 </resources>

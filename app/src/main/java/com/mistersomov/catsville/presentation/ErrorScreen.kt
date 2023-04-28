@@ -16,19 +16,22 @@
 
 package com.mistersomov.catsville.presentation
 
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import androidx.paging.PagingData
-import androidx.paging.cachedIn
-import com.mistersomov.catsville.domain.model.Cat
-import com.mistersomov.catsville.domain.use_case.FetchDataUseCase
-import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.Flow
-import javax.inject.Inject
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import com.mistersomov.catsville.R
 
-@HiltViewModel
-class CatsvilleViewModel @Inject constructor(
-    private val fetchDataUseCase: FetchDataUseCase,
-) : ViewModel() {
-    fun fetchData(): Flow<PagingData<Cat>> = fetchDataUseCase().cachedIn(viewModelScope)
+@Composable
+fun ErrorScreen(modifier: Modifier) {
+    Column(
+        modifier = modifier,
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center,
+    ) {
+        Text(text = stringResource(id = R.string.loading_error))
+    }
 }
