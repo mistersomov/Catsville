@@ -14,10 +14,11 @@
  * limitations under the License.
  */
 
-package com.mistersomov.catsville.presentation
+package com.mistersomov.catsville.presentation.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
@@ -25,16 +26,21 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import com.mistersomov.catsville.R
 
 @Composable
-fun PageLoading(modifier: Modifier) {
+fun LoadingScreen(modifier: Modifier) {
     Column(
         modifier = modifier,
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        Text(text = stringResource(id = R.string.please_wait))
+        Text(
+            modifier = Modifier
+                .padding(8.dp),
+            text = stringResource(id = R.string.fetching)
+        )
 
         CircularProgressIndicator(color = MaterialTheme.colors.secondary)
     }
