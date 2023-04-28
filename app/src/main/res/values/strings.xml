@@ -1,1 +1,4 @@
-<resources />
+<resources>
+    <!--error-->
+    <string name="implementation_state_error" translatable="false">Unexpected state</string>
+</resources>
