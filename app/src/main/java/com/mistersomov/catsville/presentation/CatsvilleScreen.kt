@@ -42,6 +42,9 @@ import androidx.paging.compose.collectAsLazyPagingItems
 import androidx.paging.compose.items
 import coil.compose.AsyncImage
 import com.mistersomov.catsville.domain.model.Cat
+import com.mistersomov.catsville.presentation.screen.ErrorScreen
+import com.mistersomov.catsville.presentation.screen.LoadingScreen
+import com.mistersomov.catsville.presentation.screen.PageLoading
 
 @Composable
 fun CatsvilleScreen(viewModel: CatsvilleViewModel = hiltViewModel()) {

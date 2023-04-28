@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.mistersomov.catsville.presentation
+package com.mistersomov.catsville.presentation.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
